@@ -59,7 +59,7 @@ body {
   position: absolute;
   z-index: 1;
   inset: 0;
-  background: center / cover no-repeat url("assets/images/cave_bg_lit.png");
+  background: center / cover no-repeat url("cave_bg_lit.png");
   opacity: 0;
   pointer-events: none;
   transition: opacity 1.4s ease;
@@ -478,7 +478,7 @@ body {
   inset: 0;
   display: none;
   overflow: hidden;
-  background: url("assets/images/river_bg.png") center / cover no-repeat;
+  background: url("river_bg.png") center / cover no-repeat;
   pointer-events: none;
 }
 
@@ -1041,10 +1041,10 @@ body {
   transition: opacity 1.2s ease;
 }
 
-.cave-shard[data-shape="circle"] { background-image: url("assets/images/crystal_circle.png"); }
-.cave-shard[data-shape="diamond"] { background-image: url("assets/images/crystal_square.png"); }
-.cave-shard[data-shape="triangle"] { background-image: url("assets/images/crystal_triangle.png"); }
-.cave-shard[data-shape="hexagon"] { background-image: url("assets/images/crystal_polygon.png"); }
+.cave-shard[data-shape="circle"] { background-image: url("crystal_circle.png"); }
+.cave-shard[data-shape="diamond"] { background-image: url("crystal_square.png"); }
+.cave-shard[data-shape="triangle"] { background-image: url("crystal_triangle.png"); }
+.cave-shard[data-shape="hexagon"] { background-image: url("crystal_polygon.png"); }
 
 #location-screen.is-cave-lit .cave-shard {
   opacity: 0.62;
@@ -1777,7 +1777,7 @@ h2 {
   position: absolute;
   z-index: 5;
   inset: 0;
-  background: url("assets/images/bg_park.png") center / cover no-repeat;
+  background: url("bg_park.png") center / cover no-repeat;
   -webkit-mask-image: radial-gradient(ellipse 5.2% 5.8% at 9% 77%, #000 55%, transparent 100%);
   mask-image: radial-gradient(ellipse 5.2% 5.8% at 9% 77%, #000 55%, transparent 100%);
   pointer-events: none;
@@ -2229,7 +2229,7 @@ h2 {
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: center / 100% 100% no-repeat url("assets/images/arrow/arrow_next.png");
+  background: center / 100% 100% no-repeat url("arrow.png");
   content: "";
   pointer-events: none;
   animation: scene-next-arrow-nudge 1.35s ease-in-out infinite;
@@ -2341,7 +2341,7 @@ h2 {
   position: absolute;
   z-index: 0;
   inset: 0;
-  background: center / cover no-repeat url("assets/images/cutscene_magic_bg.png");
+  background: center / cover no-repeat url("cutscene_magic_bg.png");
 }
 
 .key-synthesis-backdrop::after {
