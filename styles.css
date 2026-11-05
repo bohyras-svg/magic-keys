@@ -1588,6 +1588,10 @@ h2 {
   transition: opacity 0.25s ease;
 }
 
+.location-hint:empty {
+  display: none;
+}
+
 [hidden] {
   display: none !important;
 }
@@ -2208,7 +2212,7 @@ h2 {
   right: max(18px, env(safe-area-inset-right));
   bottom: max(18px, env(safe-area-inset-bottom));
   display: grid;
-  width: clamp(160px, 21vw, 260px);
+  width: clamp(80px, 10.5vw, 130px);
   aspect-ratio: 5 / 3;
   place-items: center;
   padding: 0 23% 0 0;
@@ -2280,18 +2284,7 @@ h2 {
 }
 
 .scene-nav {
-  position: absolute;
-  z-index: 6;
-  bottom: 22px;
-  padding: 11px 18px;
-  border: 1px solid rgba(255, 255, 255, 0.72);
-  border-radius: 999px;
-  background: rgba(15, 23, 42, 0.82);
-  color: #fff;
-  font: inherit;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background-color 180ms ease, transform 180ms ease;
+  display: none !important;
 }
 
 .scene-nav:hover {
