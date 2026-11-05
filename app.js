@@ -245,12 +245,14 @@ class SoundManager {
     this.bgm.muted = this._muted;
     this.bgm.currentTime = 0;
     this.bgm.play().catch(() => {
-      // Autoplay заблоковано — відтворимо при першому кліку
+      // Autoplay заблоковано — відтворимо при першому кліку або тапі
       const unlock = () => {
         this.bgm && this.bgm.play().catch(() => {});
         document.removeEventListener('click', unlock);
+        document.removeEventListener('touchstart', unlock);
       };
       document.addEventListener('click', unlock);
+      document.addEventListener('touchstart', unlock);
     });
   }
 
@@ -283,7 +285,7 @@ class SoundManager {
 
     this._audioContext = this._audioContext || new AudioContextClass();
     const context = this._audioContext;
-    if (context.state === 'suspended') context.resume();
+    if (context.state === 'suspended') context.resume().catch(() => {});
 
     const oscillator = context.createOscillator();
     const gain = context.createGain();
@@ -358,7 +360,18 @@ class SoundManager {
       onEnd && onEnd();
       this._playNextVO();
     };
-    audio.play().catch(e => { console.warn('[VO] play failed:', id, e); this._playNextVO(); });
+    audio.play().catch(e => {
+      console.warn('[VO] play failed:', id, e);
+      // На мобільних спробуємо після тапу
+      const unlockVO = () => {
+        audio.play().catch(() => {});
+        document.removeEventListener('touchstart', unlockVO);
+        document.removeEventListener('click', unlockVO);
+      };
+      document.addEventListener('touchstart', unlockVO, { once: true });
+      document.addEventListener('click', unlockVO, { once: true });
+      this._playNextVO();
+    });
   }
 
   _duck() {
