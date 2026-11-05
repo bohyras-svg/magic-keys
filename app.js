@@ -12,83 +12,83 @@ const GAME_CONFIG = {
   // Активи для прелоадингу
   assets: {
     images: [
-      { id: 'bg_park',     src: 'assets/images/bg_park.png'     },
-      { id: 'bg_forest',   src: 'assets/images/bg_forest.png'   },
-      { id: 'scene5_bg',   src: 'assets/images/scene_5_01_bg.png' },
-      { id: 'cutscene_magic_bg', src: 'assets/images/cutscene_magic_bg.png' },
-      { id: 'key_part_1',  src: 'assets/images/key_part_1.png'  },
-      { id: 'key_main',   src: 'assets/images/key_main.png'    },
-      { id: 'bg_cave_dark', src: 'assets/images/cave_bg_dark.png' },
-      { id: 'bg_cave_lit', src: 'assets/images/cave_bg_lit.png' },
-      { id: 'cave_crystal_circle', src: 'assets/images/crystal_circle.png' },
-      { id: 'cave_crystal_triangle', src: 'assets/images/crystal_triangle.png' },
-      { id: 'cave_crystal_square', src: 'assets/images/crystal_square.png' },
-      { id: 'cave_crystal_polygon', src: 'assets/images/crystal_polygon.png' },
-      { id: 'key_part_2',  src: 'assets/images/key_part_2.png'  },
-      { id: 'river_girl_hands_down', src: 'assets/images/girl_hands_down.png' },
-      { id: 'river_boy_hands_down', src: 'assets/images/boy_hands_down.png' },
-      { id: 'river_girl_vest', src: 'assets/images/girl_vest.png' },
-      { id: 'river_boy_vest', src: 'assets/images/boy_vest.png' },
-      { id: 'river_girl_helmet_vest', src: 'assets/images/girl_helmet_vest.png' },
-      { id: 'river_boy_helmet_vest', src: 'assets/images/boy_helmet_vest.png' },
-      { id: 'squirrel',    src: 'assets/images/squirrel.png'    },
-      { id: 'forest_boy',  src: 'assets/images/boy.png'         },
-      { id: 'forest_girl', src: 'assets/images/girl.png'        },
-      { id: 'cave_boy',    src: 'assets/images/boy-body_L.png' },
-      { id: 'cave_girl',   src: 'assets/images/girl-body.png' },
-      { id: 'forest_dog',  src: 'assets/images/dog.png'         },
-      { id: 'dog_body',    src: 'assets/images/dog-body.png'    },
-      { id: 'dog_tongue',  src: 'assets/images/dog-tongue.png'  },
-      { id: 'girl_body',   src: 'assets/images/girl-body.png'   },
-      { id: 'girl_arm',    src: 'assets/images/girl-arm.png'    },
-      { id: 'girl_smile',  src: 'assets/images/girl-smile.png'  },
-      { id: 'boy_body',    src: 'assets/images/boy-body.png'    },
-      { id: 'boy_arm',     src: 'assets/images/boy-arm.png'     },
-      { id: 'boy_smile',   src: 'assets/images/boy-smile.png'   },
-      { id: 'ball',        src: 'assets/images/ball.png'        },
+      { id: 'bg_park',     src: 'bg_park.png'     },
+      { id: 'bg_forest',   src: 'bg_forest.png'   },
+      { id: 'scene5_bg',   src: 'scene_5_01_bg.png' },
+      { id: 'cutscene_magic_bg', src: 'cutscene_magic_bg.png' },
+      { id: 'key_part_1',  src: 'key_part_1.png'  },
+      { id: 'key_main',   src: 'key_main.png'    },
+      { id: 'bg_cave_dark', src: 'cave_bg_dark.png' },
+      { id: 'bg_cave_lit', src: 'cave_bg_lit.png' },
+      { id: 'cave_crystal_circle', src: 'crystal_circle.png' },
+      { id: 'cave_crystal_triangle', src: 'crystal_triangle.png' },
+      { id: 'cave_crystal_square', src: 'crystal_square.png' },
+      { id: 'cave_crystal_polygon', src: 'crystal_polygon.png' },
+      { id: 'key_part_2',  src: 'key_part_2.png'  },
+      { id: 'river_girl_hands_down', src: 'girl_hands_down.png' },
+      { id: 'river_boy_hands_down', src: 'boy_hands_down.png' },
+      { id: 'river_girl_vest', src: 'girl_vest.png' },
+      { id: 'river_boy_vest', src: 'boy_vest.png' },
+      { id: 'river_girl_helmet_vest', src: 'girl_helmet_vest.png' },
+      { id: 'river_boy_helmet_vest', src: 'boy_helmet_vest.png' },
+      { id: 'squirrel',    src: 'squirrel.png'    },
+      { id: 'forest_boy',  src: 'boy.png'         },
+      { id: 'forest_girl', src: 'girl.png'        },
+      { id: 'cave_boy',    src: 'boy-body_L.png' },
+      { id: 'cave_girl',   src: 'girl-body.png' },
+      { id: 'forest_dog',  src: 'dog.png'         },
+      { id: 'dog_body',    src: 'dog-body.png'    },
+      { id: 'dog_tongue',  src: 'dog-tongue.png'  },
+      { id: 'girl_body',   src: 'girl-body.png'   },
+      { id: 'girl_arm',    src: 'girl-arm.png'    },
+      { id: 'girl_smile',  src: 'girl-smile.png'  },
+      { id: 'boy_body',    src: 'boy-body.png'    },
+      { id: 'boy_arm',     src: 'boy-arm.png'     },
+      { id: 'boy_smile',   src: 'boy-smile.png'   },
+      { id: 'ball',        src: 'ball.png'        },
     ],
     audio: [
       // ── BGM ───────────────────────────────────────────────────────────────
-      { id: 'bgm_main', src: 'assets/audio/bgm/bgm_01.mp3', type: 'bgm' },
+      { id: 'bgm_main', src: 'audio/bgm/bgm_01.mp3', type: 'bgm' },
       // ── SFX ───────────────────────────────────────────────────────────────
-      { id: 'sfx_ball',      src: 'assets/audio/sfx_ball.mp3',      type: 'sfx' },
-      { id: 'sfx_dog_happy', src: 'assets/audio/sfx_dog_happy.mp3', type: 'sfx' },
-      { id: 'sfx_key',       src: 'assets/audio/sfx_key.mp3',       type: 'sfx' },
-      { id: 'sfx_tree',      src: 'assets/audio/sfx_tree.mp3',      type: 'sfx' },
-      { id: 'sfx_nuts',      src: 'assets/audio/sfx_nuts.mp3',      type: 'sfx' },
-      { id: 'sfx_torch',     src: 'assets/audio/sfx_torch.mp3',     type: 'sfx' },
-      { id: 'sfx_crystal',   src: 'assets/audio/sfx_crystal.mp3',   type: 'sfx' },
-      { id: 'sfx_puzzle',    src: 'assets/audio/sfx_puzzle.mp3',    type: 'sfx' },
-      { id: 'sfx_equip',     src: 'assets/audio/sfx_equip.mp3',     type: 'sfx' },
-      { id: 'sfx_raft',      src: 'assets/audio/sfx_raft.mp3',      type: 'sfx' },
-      { id: 'sfx_button',    src: 'assets/audio/sfx_button.mp3',    type: 'sfx' },
-      { id: 'sfx_traffic',   src: 'assets/audio/sfx_traffic.mp3',   type: 'sfx' },
-      { id: 'sfx_synthesis', src: 'assets/audio/sfx_synthesis.mp3', type: 'sfx' },
-      { id: 'sfx_flash',     src: 'assets/audio/sfx_flash.mp3',     type: 'sfx' },
-      { id: 'sfx_win',       src: 'assets/audio/sfx_win.mp3',       type: 'sfx' },
-      { id: 'sfx_click',     src: 'assets/audio/sfx_click.mp3',     type: 'sfx' },
-      { id: 'sfx_cheer',     src: 'assets/audio/sfx_cheer.mp3',     type: 'sfx' },
+      { id: 'sfx_ball',      src: 'audio/sfx_ball.mp3',      type: 'sfx' },
+      { id: 'sfx_dog_happy', src: 'audio/sfx_dog_happy.mp3', type: 'sfx' },
+      { id: 'sfx_key',       src: 'audio/sfx_key.mp3',       type: 'sfx' },
+      { id: 'sfx_tree',      src: 'audio/sfx_tree.mp3',      type: 'sfx' },
+      { id: 'sfx_nuts',      src: 'audio/sfx_nuts.mp3',      type: 'sfx' },
+      { id: 'sfx_torch',     src: 'audio/sfx_torch.mp3',     type: 'sfx' },
+      { id: 'sfx_crystal',   src: 'audio/sfx_crystal.mp3',   type: 'sfx' },
+      { id: 'sfx_puzzle',    src: 'audio/sfx_puzzle.mp3',    type: 'sfx' },
+      { id: 'sfx_equip',     src: 'audio/sfx_equip.mp3',     type: 'sfx' },
+      { id: 'sfx_raft',      src: 'audio/sfx_raft.mp3',      type: 'sfx' },
+      { id: 'sfx_button',    src: 'audio/sfx_button.mp3',    type: 'sfx' },
+      { id: 'sfx_traffic',   src: 'audio/sfx_traffic.mp3',   type: 'sfx' },
+      { id: 'sfx_synthesis', src: 'audio/sfx_synthesis.mp3', type: 'sfx' },
+      { id: 'sfx_flash',     src: 'audio/sfx_flash.mp3',     type: 'sfx' },
+      { id: 'sfx_win',       src: 'audio/sfx_win.mp3',       type: 'sfx' },
+      { id: 'sfx_click',     src: 'audio/sfx_click.mp3',     type: 'sfx' },
+      { id: 'sfx_cheer',     src: 'audio/sfx_cheer.mp3',     type: 'sfx' },
       // ── Voice Over ────────────────────────────────────────────────────────
-      { id: 'vo_intro',       src: 'assets/audio/vo_intro.mp3',       type: 'vo' },
-      { id: 'vo_start',       src: 'assets/audio/vo_start.mp3',       type: 'vo' },
-      { id: 'vo_dog_thanks',  src: 'assets/audio/vo_dog_thanks.mp3',  type: 'vo' },
-      { id: 'vo_key1',        src: 'assets/audio/vo_key1.mp3',        type: 'vo' },
-      { id: 'vo_forest',      src: 'assets/audio/vo_forest.mp3',      type: 'vo' },
-      { id: 'vo_squirrel',    src: 'assets/audio/vo_squirrel.mp3',    type: 'vo' },
-      { id: 'vo_key2',        src: 'assets/audio/vo_key2.mp3',        type: 'vo' },
-      { id: 'vo_cave_dark',   src: 'assets/audio/vo_cave_dark.mp3',   type: 'vo' },
-      { id: 'vo_cave_lit',    src: 'assets/audio/vo_cave_lit.mp3',    type: 'vo' },
-      { id: 'vo_altar',       src: 'assets/audio/vo_altar.mp3',       type: 'vo' },
-      { id: 'vo_key3',        src: 'assets/audio/vo_key3.mp3',        type: 'vo' },
-      { id: 'vo_river',       src: 'assets/audio/vo_river.mp3',       type: 'vo' },
-      { id: 'vo_raft',        src: 'assets/audio/vo_raft.mp3',        type: 'vo' },
-      { id: 'vo_river_done',  src: 'assets/audio/vo_river_done.mp3',  type: 'vo' },
-      { id: 'vo_key4',        src: 'assets/audio/vo_key4.mp3',        type: 'vo' },
-      { id: 'vo_red_light',   src: 'assets/audio/vo_red_light.mp3',   type: 'vo' },
-      { id: 'vo_green_light', src: 'assets/audio/vo_green_light.mp3', type: 'vo' },
-      { id: 'vo_cross_done',  src: 'assets/audio/vo_cross_done.mp3',  type: 'vo' },
-      { id: 'vo_key5',        src: 'assets/audio/vo_key5.mp3',        type: 'vo' },
-      { id: 'vo_finale',      src: 'assets/audio/vo_finale.mp3',      type: 'vo' },
+      { id: 'vo_intro',       src: 'audio/vo_intro.mp3',       type: 'vo' },
+      { id: 'vo_start',       src: 'audio/vo_start.mp3',       type: 'vo' },
+      { id: 'vo_dog_thanks',  src: 'audio/vo_dog_thanks.mp3',  type: 'vo' },
+      { id: 'vo_key1',        src: 'audio/vo_key1.mp3',        type: 'vo' },
+      { id: 'vo_forest',      src: 'audio/vo_forest.mp3',      type: 'vo' },
+      { id: 'vo_squirrel',    src: 'audio/vo_squirrel.mp3',    type: 'vo' },
+      { id: 'vo_key2',        src: 'audio/vo_key2.mp3',        type: 'vo' },
+      { id: 'vo_cave_dark',   src: 'audio/vo_cave_dark.mp3',   type: 'vo' },
+      { id: 'vo_cave_lit',    src: 'audio/vo_cave_lit.mp3',    type: 'vo' },
+      { id: 'vo_altar',       src: 'audio/vo_altar.mp3',       type: 'vo' },
+      { id: 'vo_key3',        src: 'audio/vo_key3.mp3',        type: 'vo' },
+      { id: 'vo_river',       src: 'audio/vo_river.mp3',       type: 'vo' },
+      { id: 'vo_raft',        src: 'audio/vo_raft.mp3',        type: 'vo' },
+      { id: 'vo_river_done',  src: 'audio/vo_river_done.mp3',  type: 'vo' },
+      { id: 'vo_key4',        src: 'audio/vo_key4.mp3',        type: 'vo' },
+      { id: 'vo_red_light',   src: 'audio/vo_red_light.mp3',   type: 'vo' },
+      { id: 'vo_green_light', src: 'audio/vo_green_light.mp3', type: 'vo' },
+      { id: 'vo_cross_done',  src: 'audio/vo_cross_done.mp3',  type: 'vo' },
+      { id: 'vo_key5',        src: 'audio/vo_key5.mp3',        type: 'vo' },
+      { id: 'vo_finale',      src: 'audio/vo_finale.mp3',      type: 'vo' },
     ],
   },
 
@@ -1541,7 +1541,7 @@ class Game {
     };
     const flyingKey = document.createElement('img');
     flyingKey.className = 'key-flight';
-    flyingKey.src = 'assets/images/key_part_2.png';
+    flyingKey.src = 'key_part_2.png';
     flyingKey.alt = '';
     flyingKey.setAttribute('aria-hidden', 'true');
     Object.assign(flyingKey.style, {
@@ -2321,7 +2321,7 @@ class Game {
     };
     const flyingKey = document.createElement('img');
     flyingKey.className = 'key-flight';
-    flyingKey.src = 'assets/images/key_part_2.png';
+    flyingKey.src = 'key_part_2.png';
     flyingKey.alt = '';
     flyingKey.setAttribute('aria-hidden', 'true');
     Object.assign(flyingKey.style, {
@@ -2415,10 +2415,10 @@ class Game {
     const boySprite = this.el.sceneBoy.querySelector('.forest-sprite');
     const girlSprite = this.el.sceneGirl.querySelector('.forest-sprite');
     boySprite.src = isPark
-      ? 'assets/images/boy-body.png'
+      ? 'boy-body.png'
       : this.assetLoader.getImage(isCave ? 'cave_boy' : 'forest_boy').src;
     girlSprite.src = isPark
-      ? 'assets/images/girl_hands_down.png'
+      ? 'girl_hands_down.png'
       : this.assetLoader.getImage(isCave ? 'cave_girl' : 'forest_girl').src;
     this.el.sceneDog.classList.toggle('is-forest-character', isForest);
     this.el.sceneGirl.classList.toggle('is-forest-character', isForest);
@@ -2820,7 +2820,7 @@ class Game {
     };
     const flyingKey = document.createElement('img');
     flyingKey.className = 'key-flight';
-    flyingKey.src = 'assets/images/key_part_2.png';
+    flyingKey.src = 'key_part_2.png';
     flyingKey.alt = '';
     flyingKey.setAttribute('aria-hidden', 'true');
     Object.assign(flyingKey.style, {
