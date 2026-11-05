@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <filter id="crayon" x="-12%" y="-12%" width="124%" height="124%">
+      <feTurbulence
+        type="fractalNoise"
+        baseFrequency="0.045"
+        numOctaves="3"
+        seed="17"
+        result="roughness"
+      />
+      <feDisplacementMap
+        in="SourceGraphic"
+        in2="roughness"
+        scale="5"
+        xChannelSelector="R"
+        yChannelSelector="G"
+      />
+    </filter>
+
+    <filter id="crayon-marks" x="-10%" y="-15%" width="120%" height="130%">
+      <feTurbulence
+        type="fractalNoise"
+        baseFrequency="0.075"
+        numOctaves="2"
+        seed="8"
+        result="grain"
+      />
+      <feDisplacementMap
+        in="SourceGraphic"
+        in2="grain"
+        scale="3"
+        xChannelSelector="R"
+        yChannelSelector="G"
+      />
+    </filter>
+
+    <clipPath id="key-fragment">
+      <path d="
+        M 221 77
+        L 239 87
+        L 253 75
+        L 270 91
+        L 287 82
+        L 299 99
+        L 291 115
+        L 297 132
+        L 290 151
+        L 298 171
+        L 291 191
+        L 299 211
+        L 291 231
+        L 298 251
+        L 290 271
+        L 297 291
+        L 291 312
+        L 310 319
+        Q 320 322 320 333
+        L 320 362
+        Q 319 373 308 373
+        L 294 373
+        Q 283 372 283 361
+        L 283 344
+        L 270 344
+        L 270 369
+        Q 269 380 258 380
+        L 244 380
+        Q 233 379 233 368
+        L 233 344
+        L 219 344
+        L 219 362
+        Q 219 373 208 373
+        L 193 373
+        Q 182 372 182 361
+        L 182 334
+        Q 182 323 193 320
+        L 211 315
+        L 205 297
+        L 213 278
+        L 205 257
+        L 213 238
+        L 205 218
+        L 213 198
+        L 205 178
+        L 213 158
+        L 205 138
+        L 213 119
+        Z
+      "/>
+    </clipPath>
+  </defs>
+
+  <path
+    d="
+      M 221 77
+      L 239 87
+      L 253 75
+      L 270 91
+      L 287 82
+      L 299 99
+      L 291 115
+      L 297 132
+      L 290 151
+      L 298 171
+      L 291 191
+      L 299 211
+      L 291 231
+      L 298 251
+      L 290 271
+      L 297 291
+      L 291 312
+      L 310 319
+      Q 320 322 320 333
+      L 320 362
+      Q 319 373 308 373
+      L 294 373
+      Q 283 372 283 361
+      L 283 344
+      L 270 344
+      L 270 369
+      Q 269 380 258 380
+      L 244 380
+      Q 233 379 233 368
+      L 233 344
+      L 219 344
+      L 219 362
+      Q 219 373 208 373
+      L 193 373
+      Q 182 372 182 361
+      L 182 334
+      Q 182 323 193 320
+      L 211 315
+      L 205 297
+      L 213 278
+      L 205 257
+      L 213 238
+      L 205 218
+      L 213 198
+      L 205 178
+      L 213 158
+      L 205 138
+      L 213 119
+      Z
+    "
+    fill="#F5A623"
+    stroke="#8A4F16"
+    stroke-width="10"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    filter="url(#crayon)"
+  />
+
+  <g clip-path="url(#key-fragment)" filter="url(#crayon-marks)">
+    <path
+      d="
+        M 190 195
+        Q 218 188 247 196
+        Q 277 203 307 192
+        L 314 225
+        Q 283 235 250 226
+        Q 219 218 190 229
+        Z
+      "
+      fill="#E74C3C"
+      stroke="#B62C27"
+      stroke-width="4"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+
+    <path
+      d="M 227 207 Q 239 201 252 207 Q 247 218 234 218 Q 227 216 227 207 Z"
+      fill="#FFF200"
+      stroke="#D99E00"
+      stroke-width="2"
+      stroke-linejoin="round"
+    />
+
+    <path
+      d="M 226 112 Q 238 106 249 112 M 224 128 Q 242 121 258 128 M 228 147 Q 244 141 258 146"
+      fill="none"
+      stroke="#FFD36A"
+      stroke-width="5"
+      stroke-linecap="round"
+      opacity="0.8"
+    />
+
+    <path
+      d="M 196 291 Q 210 286 221 290 M 276 301 Q 286 296 294 300"
+      fill="none"
+      stroke="#D98220"
+      stroke-width="4"
+      stroke-linecap="round"
+      opacity="0.7"
+    />
+  </g>
+</svg>
